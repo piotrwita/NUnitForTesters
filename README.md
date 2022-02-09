@@ -30,7 +30,14 @@ Dokumentacja klasy StringAssert: https://docs.nunit.org/articles/nunit/writing-t
 2. Napisz dla niej testy które pokryją 100% kodu
 3. Spróbuj użyć parametryzacji testów
 4. Użyj do porównania klasy StringAssert
-
+5. Odpal testy równolegle, żeby było lepiej widać różnicę dodaj w klasie testowej metodę która wymusi pauzę
+```csharp
+[TearDown]
+public void TearDown()
+{
+    Thread.Sleep(1500);
+}
+```
 
 #### Zadanie 3 - Range
 1. Obejrzyj klasę `NumberService.cs`
