@@ -21,13 +21,12 @@ namespace NUnitForTesters.Services
                 return 100 / parameter;
         }
 
-        public static string ThisMethodWillPassSometimes()
+        public static int ThisMethodWillPassSometimes()
         {
 
             Random rnd = new Random();
             int timeout = rnd.Next(500, 1500);
-            Thread.Sleep(timeout);
-            return "Yay, it passed!";
+            return timeout;
         }
 
 

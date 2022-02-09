@@ -58,7 +58,7 @@ public void TearDown()
 
 #### Zadane 6 - Retry
 1. Napisz test, który sprawdzi metodę `ThisMethodWillPassSometimes()`
-2. Ustaw mu timeout na sekundę.
+2. Jako przechodzącą asercję ustaw rezultat mniejszy od 1000
 3. Uruchom go parę razy (sprawdź czy przechodzi).
 4. Ustaw automatyczne powtarzanie testu w przypadku failu na 5 razy.
 
