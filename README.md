@@ -68,11 +68,7 @@ Dokumentacja klasy: https://docs.nunit.org/articles/nunit/writing-tests/assertio
 TODO
 
 
-#### Zadanie 8 - Assert.That
-Dokumentacja i przykłady: https://docs.nunit.org/articles/nunit/writing-tests/assertions/assertion-models/constraint.html
-
-
-#### Zadanie 9 - Multiple Asserts
+#### Zadanie 8 - Multiple Asserts
 ```csharp
     Assert.Multiple(() =>
     {
