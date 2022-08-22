@@ -65,14 +65,15 @@ public void TearDown()
 
 #### Zadanie 7 - CollectionAssert
 Dokumentacja klasy: https://docs.nunit.org/articles/nunit/writing-tests/assertions/classic-assertions/Collection-Assert.html
-TODO
+1. Napisz test dla klasy `CollectionService`;
+2. Przetestuj utworzenie nowego obiektu konstruktorem bezparametrowym.
+3. Sprawdź czy property `Names` zawiera unikalne elementy.
+4. Sprawdź czy property `Names` nie jest puste (i nie zawiera nulli)
 
 
 #### Zadanie 8 - Multiple Asserts
-```csharp
-    Assert.Multiple(() =>
-    {
-        Assert.AreEqual(5.2, result.RealPart, "Real part");
-        Assert.AreEqual(3.9, result.ImaginaryPart, "Imaginary part");
-    });
-```
+1. Utwórz nowy obiekt konstruktorem `CollectionService` i jako parametr przekaż listę ze swoim imieniem i nazwiskiem.
+2. Sprawdź czy metoda `GetInitialsFromNames()` zwraca poprawne inicjały
+3. Dodaj kolejny element do listy nazwisk (np. kolegi)
+4. Sprawdź rozmiar listy imion oraz listy inicjałów są takie same.
+5. Złap wszystkie asercje w `Assert.Multiple()`
