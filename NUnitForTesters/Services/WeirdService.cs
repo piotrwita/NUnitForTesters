@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 
 namespace NUnitForTesters.Services
@@ -17,7 +15,7 @@ namespace NUnitForTesters.Services
         {
             if (parameter == 0)
                 throw new ArgumentException("Parameter cannot be zero");
-            else 
+            else
                 return 100 / parameter;
         }
 
